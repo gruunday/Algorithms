@@ -1,4 +1,4 @@
 ## Python Algorithm Templates
 
 
-* Algorithms for python.
+* Algorithms in python.
