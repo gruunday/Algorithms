@@ -3,6 +3,7 @@
 ### Contents
 1. [Stacks](#Stacks)
 2. [Queues](#Queues)
+3. [LinkedLists](#LinkedLists)
 
 ### Stacks
 
@@ -77,4 +78,44 @@ Operation | Big O Performance
 isempyt() | Constant time
 enqueue() | Constant time
 dequeue() | Constant time
+
+### LinkedLists
+
+* Linked Lists
+  * A chain of Nodes
+  * Stores series of elements
+  * Each node has two parts. Item and pointer
+  * Last pointer points to None
+  * First Node is called the head
+
+```python
+class Node:
+    def __init__(self, item, next):
+        self.item = item
+        self.item = next
+
+class LinkedList:
+    def __init__(self):
+        self.head = None
+
+    def add(self, item):
+        self.head = None(item, self.head)
+
+    def is_empty(self):
+        return self.head == None
+
+
+* Linked List ADT
+  * isempty() # is linkedlist empty
+  * add()     # add item to the list
+  * remove()  # remove item from the list
+
+```python
+from LinkedList import LinkedList
+
+ll = LinkedList()
+
+for v in 'aeiou':
+    ll.add(v)
+```
 
