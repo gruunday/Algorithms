@@ -205,7 +205,68 @@ while ptr != None:
 
 Python List | Linked List
 ------------ | -------------
-constant time access based on idex. Nth element is O(n) | Constant time delete and insert operations
-many operations have constant time improvement| n\a 
-typically uses less memory | n\a 
+Constant time access based on idex. Nth element is O(n) | Constant time delete and insert operations
+Many operations have constant time improvement| n\a 
+Typically uses less memory | n\a 
+
+* Can make it more useful by supporting builtins
+  * __str__()
+  * __len__()
+  * __iter__()
+  * __in__()
+
+* Linked Lists go great with recursion
+* Generally requires two functions. One to set up and then one to recurse
+
+* Linked List Applications
+  * Linked Lists can be easily used to impelement a stack or a queue
+  * Advantage 
+    * Never have to worry about it being full
+    * Stack: Natural for a LinkedList
+
+* Stack Example
+```python
+import LinkedList
+class Stack:
+    def __init__(self):
+        self.linkedlist = LinkedList.LinkedList()
+    
+    def push(self, item):
+        self.linkedlist.add(item)
+    
+    def pop(self):
+        return self.linkedlist.remove()
+    
+    def is_empty(self):
+        return self.linkedlist.is_empty()
+```
+
+* Queue
+  * We need a pointer for the head and the tail
+  * We add at the head and remove from the tail
+
+* Queue Example
+```python
+import LinkedList
+class Queue:
+    def __init__(self):
+        self.linkedlist = LinkedList.LinkedList()
+    
+    def enqueue(self, item):
+        self.linkedlist.addlast(item)
+ 
+    def dequeue(self):
+        return self.linkedlist.remove()
+ 
+    def is_empty(self):
+        return self.linkedlist.is_empty()
+
+    def addlast(self, item):
+        if self.is_empty():
+            self.tail = Node(item, None)
+            self.head = self.tail
+        else:
+            self.tail.next = Node(item, None)
+            self.tail = self.tail.next
+```
 
