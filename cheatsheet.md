@@ -2,9 +2,10 @@
 
 ### Contents
 1. [SelectionSort](#SelectionSort)
-1. [Stacks](#Stacks)
-2. [Queues](#Queues)
-3. [LinkedLists](#LinkedLists)
+2. [InsertionSort](#InsertionSort)
+3. [Stacks](#Stacks)
+4. [Queues](#Queues)
+5. [LinkedLists](#LinkedLists)
 
 ### SelectionSort
 * In-place comparaison sort
@@ -33,6 +34,27 @@
 * This speeds up finding and removing the lowest value
 * The heap will aloow finding the next lowest element in O(logN) time instead of O(n)
 * This makes it over all N(logN)
+
+### InsertionSort
+* Simple sort algorithm that builds a sorted array one item at a time
+* Not very efficient algorithm
+* Advantages 
+  * Simple implementation
+  * Efficient for small data sets
+  * More efficient in practice than other O(n**2) algorithms e.g selection sort
+  * Efficient for sets that are already mostly sorted
+  * Stable i.e does not change the relative order of elements with equal keys
+  * In-place so it does not require any more memory
+
+* Example
+
+```python
+[6, 12, 13, 7, 3, 10] # unordered list
+
+[|6|, 12, 13, 7, 3, 10] # Assume that 6 is a sorted list of one item
+
+
+``` 
 
 ### Stacks
 
