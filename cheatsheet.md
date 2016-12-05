@@ -18,14 +18,14 @@
 
 * Example of the stack
 
-'''python
+```python
 stack = Stack()
 for v in 'aeiou':
     stack.push(v)
 
 while not stack.isempty():
     print(stack.pop())
-'''
+```
 
 * Applications
   * Browser History
