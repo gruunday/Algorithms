@@ -2,7 +2,7 @@
 
 ### Contents
 1. [Stacks](#Stacks)
-2. [bla](#bla)
+2. [Queues](#Queues)
 
 ### Stacks
 
@@ -43,4 +43,38 @@ push() | Constant time
 pop() | Constant time
 
 
-### bla
+### Queues
+
+* Queues
+  * Similar to stack
+  * Difference is first itm placed in queue will be the last removed
+  * Items come off in the same order that they went on
+  * First In First Out (FIFO)
+
+* Queue ADT
+  * isempty() # is the queue empty
+  * enqueue() # put an item in the queue
+  * dequeue() # removes item from the queue
+
+* Example of the queue
+
+```python
+queue = Queue()
+for v in 'aeiou':
+    queue.enqueue(v)
+
+while not queue.isempty():
+    queue(queue.dequeue())
+```
+
+* Applications
+  * The queue is often implemented as a circular list with two pointers
+  * Front: where items are to be removed
+  * Back: where items are to be added
+
+Operation | Big O Performance
+------------ | -------------
+isempyt() | Constant time
+enqueue() | Constant time
+dequeue() | Constant time
+
