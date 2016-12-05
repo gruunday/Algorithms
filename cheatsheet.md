@@ -1,5 +1,9 @@
 ## CheatSheet for Algorithms 
 
+### Contents
+1. [Stacks](#Stacks)
+2. [Example2](#example2)
+
 ### Stacks
 
 * Abstract Data Type (ADT)
