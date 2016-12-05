@@ -289,7 +289,8 @@ class Queue:
     * You can store a value in addition to a key
 
 * Tree Terminology
-
+Name | Description
+---------|----------------------------
 Root | Top node in a tree
 Child | A node directly spouting from a node above it
 Parent | The opposite of the child node
