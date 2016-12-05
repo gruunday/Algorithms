@@ -202,9 +202,10 @@ while ptr != None:
 ```
 
 * Python List vs Linked List
+
 Python List | Linked List
 ------------ | -------------
 constant time access based on idex. Nth element is O(n) | Constant time delete and insert operations
-many operations have constant time improvement| - 
-typically uses less memory | - 
+many operations have constant time improvement| n\a 
+typically uses less memory | n\a 
 
