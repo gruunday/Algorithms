@@ -6,6 +6,7 @@
 3. [Stacks](#stacks)
 4. [Queues](#queues)
 5. [LinkedLists](#linkedlists)
+6. [BinaryTree](#binarytree)
 
 ### SelectionSort
 * In-place comparaison sort
@@ -288,6 +289,7 @@ class Queue:
     * You can store a value in addition to a key
 
 * Tree Terminology
+
 Root | Top node in a tree
 Child | A node directly spouting from a node above it
 Parent | The opposite of the child node
