@@ -1,11 +1,11 @@
 ## CheatSheet for Algorithms 
 
 ### Contents
-1. [SelectionSort](#SelectionSort)
-2. [InsertionSort](#InsertionSort)
-3. [Stacks](#Stacks)
-4. [Queues](#Queues)
-5. [LinkedLists](#LinkedLists)
+1. [SelectionSort](#selectionsort)
+2. [InsertionSort](#insertionsort)
+3. [Stacks](#stacks)
+4. [Queues](#queues)
+5. [LinkedLists](#linkedlists)
 
 ### SelectionSort
 * In-place comparaison sort
