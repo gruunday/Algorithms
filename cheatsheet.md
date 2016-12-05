@@ -53,7 +53,15 @@
 
 [|6|, 12, 13, 7, 3, 10] # Assume that 6 is a sorted list of one item
 
+[|6, 12|, 13, 7, 3, 10] # The 12 will stay to the right of the 6: 6 < 12
 
+[|6, 12, 13|, 7, 3, 10] # All 3 elements are now sorted
+
+[|6, 7, 12, 13|, 3, 10] # The 7 is moved to its correct place and all the other elements are moved up
+
+[|3, 6, 7, 12, 13|, 10] # The 3 is moved to the start of the list
+
+[|3, 6, 7, 10, 12, 13|] # The 10 is moved to its correct postion and the list is not sorted
 ``` 
 
 ### Stacks
