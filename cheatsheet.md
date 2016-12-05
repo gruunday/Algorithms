@@ -16,17 +16,17 @@
 * Example
 
 ```python
-6, 12, 13, 7, 3, 10 # unordered list
+[6, 12, 13, 7, 3, 10] # unordered list
 
-3, 12, 13, 7, 6, 10 # swap 6, 3
+[3, 12, 13, 7, 6, 10] # swap 6, 3
 
-3, 6, 13, 7, 12, 10 # swap 12, 6
+[3, 6, 13, 7, 12, 10] # swap 12, 6
 
-3, 6, 7, 13, 12, 10 # swap 13, 7
+[3, 6, 7, 13, 12, 10] # swap 13, 7
 
-3, 6, 7, 10, 12, 13 # swap 13, 10
+[3, 6, 7, 10, 12, 13] # swap 13, 10
 
-3, 6, 7, 10, 12, 13 # now sorted
+[3, 6, 7, 10, 12, 13] # now sorted
 ```
 
 * Heapsort improves the algorithm by impelmenting an implicict heap data structure
