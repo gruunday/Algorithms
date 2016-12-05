@@ -1,9 +1,38 @@
 ## CheatSheet for Algorithms 
 
 ### Contents
+1. [SelectionSort](#SelectionSort)
 1. [Stacks](#Stacks)
 2. [Queues](#Queues)
 3. [LinkedLists](#LinkedLists)
+
+### SelectionSort
+* In-place comparaison sort
+* O(n**2) time complexity
+* General case worse than insertion sort
+* Noted for simplicity
+* Good when auxillary memory is limited
+
+* Example
+
+```python
+6, 12, 13, 7, 3, 10 # unordered list
+
+3, 12, 13, 7, 6, 10 # swap 6, 3
+
+3, 6, 13, 7, 12, 10 # swap 12, 6
+
+3, 6, 7, 13, 12, 10 # swap 13, 7
+
+3, 6, 7, 10, 12, 13 # swap 13, 10
+
+3, 6, 7, 10, 12, 13 # now sorted
+```
+
+* Heapsort improves the algorithm by impelmenting an implicict heap data structure
+* This speeds up finding and removing the lowest value
+* The heap will aloow finding the next lowest element in O(logN) time instead of O(n)
+* This makes it over all N(logN)
 
 ### Stacks
 
@@ -103,7 +132,7 @@ class LinkedList:
 
     def is_empty(self):
         return self.head == None
-
+```
 
 * Linked List ADT
   * isempty() # is linkedlist empty
