@@ -270,3 +270,35 @@ class Queue:
             self.tail = self.tail.next
 ```
 
+### BinaryTree
+
+* Binary tree
+  * A binary tree is a collection of nodes.
+  * Each node has a left and right pointer
+  * A root node inicates the start of the tree. The roor is None for an empty tree
+
+  * A Binary Search Tree (BST) is an implimentaion of a tree where:
+    * All the values on the left of a node are smaller than the node itself
+    * And all the values of the right of a node are larger than itself
+
+  * It must be possible in a Binary Tree to compare values
+  * Binary Tree can be used to implement a set
+    * It may be possible that the same set has many layouts
+  * Binary Tree can also be user to impelment a map (Dictionary)
+    * You can store a value in addition to a key
+
+* Tree Terminology
+Root | Top node in a tree
+Child | A node directly spouting from a node above it
+Parent | The opposite of the child node
+Siblings | A group of child nodes with the same parent
+Descendant | A node reachable through parent to child
+Ancestor | A node reachable throught child to parent
+Leaf / External Node | A node with no children
+Internal Node | A node with a child
+Edge | The connection between nodes
+Path | A sequence of ndoes and edges connecting a node with a descendent
+Height of a node | The height of a node is the number of edges on the longest path between that node and a leaf
+Height of a tree | the height of a tree is the height of its root node
+
+
