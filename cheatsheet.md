@@ -63,6 +63,14 @@
 
 [|3, 6, 7, 10, 12, 13|] # The 10 is moved to its correct postion and the list is not sorted
 ``` 
+* Best case for insertion sort is that they are all in order
+* This then means that insertion sort has a linear run time O(n)
+
+* Worset case is an array in reverse order
+* This will give a result of O(n**2)
+
+* Average case is also quadratic O(n**2)
+* Impractical for sorting large arrays
 
 ### Stacks
 
@@ -168,6 +176,9 @@ class LinkedList:
   * isempty() # is linkedlist empty
   * add()     # add item to the list
   * remove()  # remove item from the list
+  * delete()  # delete a particular item
+  * count()   # number of items in the linked list
+  * contains(item) # checks if the linked list contains the item
 
 ```python
 from LinkedList import LinkedList
@@ -177,4 +188,23 @@ ll = LinkedList()
 for v in 'aeiou':
     ll.add(v)
 ```
+* Printing every element
+
+  1. Start at the head
+  2. If None we're Done, else print the item
+  3. Repeat step 2 til Done
+
+```python
+ptr = head
+while ptr != None:
+    print(item)
+    ptr = ptr.next
+```
+
+* Python List vs Linked List
+Python List | Linked List
+------------ | -------------
+constant time access based on idex. Nth element is O(n) | Constant time delete and insert operations
+many operations have constant time improvement| - 
+typically uses less memory | - 
 
