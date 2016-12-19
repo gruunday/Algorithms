@@ -394,3 +394,76 @@ def constains(self, item):
   * No more than one restructuring is required per insert
 
 * Search and add are now O(logN) operations because the height is O(logN)
+
+### Hashing
+
+* Introduction
+  * An array is a very efficient storage system
+  * Once you have the index of the array, you can immediately get the contents of the array
+  * If you are searching for a name in an array, then if there were a magic functionc which coudl convert the name into an index in an array
+    * No searching required
+    * get_index('Name') will return the index
+    * To see if Name was in the index we could look at that location
+    * No searching means complexity is O(1)
+
+* Hashing
+  * A hashing function is a function which generates an integer value from an item
+  * An array, called table, is created an the index of the item will be 
+    * abs(hashcode) % len(table)
+  * Now the table can be immediatly examined to see whether the item is present or not.
+
+* Collisions
+  * A problem is that two different items may end up with the same index. This is a collision
+  * Solutions
+    * Open addressing - find next available address
+    * Chaining - using a linked list at each entry and add items on the end
+
+```
+table[0] Head 0->
+table[1]
+table[2]
+table[3]
+table[4] Head 204->44->4->
+table[5] Head 5->
+table[6]
+table[7]
+table[8] Head 8->
+table[9] Head 99->9->
+```
+
+* Complexity
+  * Assume the number of items in the set is n and the hash table is also size n, then:
+    * The average time complexity of contains, add and remove is O(1)
+    * Each operation operates on a linked list of about 1 element
+    * If the table size is smaller than the number of items, say n/4, basic operations are 4 times slower on average but is still O(1)
+  * Some operations, like finding the smallest element in the set are complex.
+  * Every element in the table needs to be examined and then every entry in the linked list
+  * O(k + n) where k is the table size aand n is the size of the linked list
+  * When a hash table gets crowded, performance deteriorates
+  * The load factor is the size of the set over the size of the table: n/k and usually, we increase the has table size if the load factor goes above say 0.75
+  * Increasing the size of the table is expensive as each item's has has to berecalculated
+
+* Ideal Hash Function
+  * The ideal hash function would give a good range of values
+  * Hashing on phone numbers it would be back to has on the first three digits because they are repeated a lot and we would have many collisions
+
+* The Hash Function
+  * hash(item)
+    * returns the has code of the item (int)
+  * However you may overwrite the has function
+    * __hash__()
+
+* Hash code of a string
+  * Ideally the has would use the contents of the item to generate the hash code. 
+  * One way would be to take each element of the string and add it together (ASCII). 
+  * This does include all the characters of the strong, but it means that "abc" and "cba" and "cab" would all hash to the same value.
+  * A better hash method would take the position into account
+
+* Hashing Applications
+  * There are two main applications for hashing:
+    * Sets
+    * Maps
+    * (same as for binary trees)
+  * Big difference between hashing and BST
+    * Items in hash table are not sorted
+    * They don't need to be comparable
