@@ -7,6 +7,7 @@
 4. [Queues](#queues)
 5. [LinkedLists](#linkedlists)
 6. [BinaryTree](#binarytree)
+6. [AVLTree](#avltree)
 
 ### SelectionSort
 * In-place comparaison sort
@@ -361,3 +362,35 @@ def constains(self, item):
     * The Node needs to store a value in addition to the key (item)
     * The add method should overwirt the value when a duplicate is added
 
+### AVLTrees
+
+* Problems with a BST
+  * An unbalanced Binary Search Tree
+  * A skewed BST has perforemaace similar to linked list
+  * We want to keep the tree balanced by keeping the height at O(logN)
+
+* An AVL Tree
+  * This is a BST where the height is maintained O(logN)
+  * This is done by adjusting the tree whenever it start to beome unbalanced
+  * The add and delete operations may need to restucture the tree to maintain balance
+  * We will only consider the add operation
+
+* AVL Balance
+  * We define a node to be AVL balanced when the difference in height between the two child nodes is less than or equal to one
+  * Now, after we add a node, if the tree is no AVl balanced, we restrucutre it so that it is.
+  * There are four cases when the tre becomes imbalanced
+    * right-right
+    * left-left
+    * right-left
+    * left-right
+  * In each case we fix it by replacing the root with the middle element
+
+* AVL Adding an element
+  * Add the node to the tree
+  * Start at this node, move up the tree towards the root checking to see if any node is now unbalanced.
+  * If it is, find out which case itis and perform the correspinding restructuring.
+  * Do this every time an element is added
+  * It seems like a lot of work, but is is only O(logN)
+  * No more than one restructuring is required per insert
+
+* Search and add are now O(logN) operations because the height is O(logN)
