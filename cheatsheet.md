@@ -305,4 +305,59 @@ Path | A sequence of ndoes and edges connecting a node with a descendent
 Height of a node | The height of a node is the number of edges on the longest path between that node and a leaf
 Height of a tree | the height of a tree is the height of its root node
 
+* The Node has an iten and left + right pointers
+* The BST has a contains and an add method
+* They are both of time complexity O(h)
+
+* If you are using recursion with trees, you usually need two methods
+  * One sets up for recursion
+  * The other does the recusion
+
+```python
+def r_contains(self, ptr, item):
+    # Recursice contains here
+
+def constains(self, item):
+    return self.r_contains(self.root, item)
+
+```
+
+* Height of a tree
+  * The height of a tree is the maximum number of nodes from the root to a leaf.
+  * The solution sould be recursive
+  * If your left child had 2 children and your right child had 4 children you would have a height of 4
+
+* Count the number of elements
+  * If you were a leaf node you would have no children
+  * If your left child had a subtree with 10 elements and your right child had a subtreee with 6 elements, you would have 16 elements
+
+* Height and Balance
+  * Many tree related operations are O(h) where h is the height of the tree
+  * For a given number of elements, n, we would like to reduce the height of the tree
+  * The best we can achieve is log(n) when the tree is balanced. The is when the difference in depth of any two leaves is at most 1
+
+* Tree Traversal
+  * This is how we get around to every element of the tree in some sort of order
+  * These orders can be:
+    * inorder
+    * preorder
+    * postorder
+    * Useful link  https://en.wikipedia.org/wiki/Tree_traversal
+  * This can be done recursively
+  * The defference between pre and postis the order of the left and right instruction
+  ```python
+  def in_order(slef,ptr):
+    if ptr != None:
+        self.in_order(ptr.left)
+        print(ptr.item)
+        self.in_order(ptr.right)
+  ```
+
+* Tree Applications 
+  * A set
+    * It is the fastest way to check whether an item is in the set or not.
+    * The add method needs to not add a duplicate
+  * A map
+    * The Node needs to store a value in addition to the key (item)
+    * The add method should overwirt the value when a duplicate is added
 
