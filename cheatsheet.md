@@ -7,7 +7,8 @@
 4. [Queues](#queues)
 5. [LinkedLists](#linkedlists)
 6. [BinaryTree](#binarytree)
-6. [AVLTree](#avltrees)
+7. [AVLTree](#avltrees)
+8. [Hashing](#hashing)
 
 ### SelectionSort
 * In-place comparaison sort
