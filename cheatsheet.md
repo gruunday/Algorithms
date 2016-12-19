@@ -107,7 +107,7 @@ while not stack.isempty():
 
 Operation | Big O Performance
 ------------ | -------------
-isempyt() | Constant time
+isempty() | Constant time
 push() | Constant time
 pop() | Constant time
 
